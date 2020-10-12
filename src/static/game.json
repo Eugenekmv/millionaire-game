@@ -1,0 +1,26 @@
+{
+    "quiz": [
+        {
+            "question": "Hows old your elder brother was 10 years before you was born, mate?",
+            "id": 1,
+            "rightAnswerId": 1,
+            "answers": [
+                {"text": 10, "id": 1},
+                {"text": 13, "id": 2},
+                {"text": 15, "id": 3},
+                {"text": 12, "id": 4}
+            ]
+        },
+        {
+            "question": "Hows the weather?",
+            "id": 2,
+            "rightAnswerId": 4,
+            "answers": [
+                {"text": 10, "id": 1},
+                {"text": 13, "id": 2},
+                {"text": 15, "id": 3},
+                {"text": 12, "id": 4}
+            ]
+        }
+    ]
+}

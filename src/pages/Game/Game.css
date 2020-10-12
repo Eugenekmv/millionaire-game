@@ -1,0 +1,121 @@
+.quiz-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f5f7;
+}
+
+.quiz-wrapper {
+  display: flex;
+}
+
+.quiz-game {
+  /* width: 73%; */
+  flex-basis: 73%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  /* width: 844px; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quiz-game__title {
+  width: 624px;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 133px;
+}
+
+.quiz-game__questions {
+  width: 844px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.btn-question {
+  z-index: 99;
+  position: relative;
+  width: 40%;
+  height: 72px;
+  margin-bottom: 32px;
+  color: black;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 48px;
+  font-weight: bold;
+  outline: none;
+  border: 2px solid #d0d0d8;
+  border-radius: 6px;
+  transition: border-color ease 0.2s;
+  cursor: pointer;
+}
+.btn-question.success {
+  background-color: #e6faea;
+}
+.btn-question.success .btn-question::before,
+.btn-question::after {
+  background-color: #e6faea;
+}
+.btn-question.failed {
+  background-color: #fdeeed;
+}
+.btn-question.failed .btn-question::before,
+.btn-question::after {
+  background-color: #fdeeed;
+}
+.btn-question:hover {
+  border-color: #ff8b37;
+}
+.btn-question:active {
+  background-color: #fff3eb;
+}
+
+.btn-question::before,
+.btn-question::after {
+  z-index: -1;
+  content: "";
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 8px;
+  transform: rotate(45deg);
+  border: 2px solid #d0d0d8;
+  border-radius: 5px;
+  transition: border-color ease 0.2s;
+}
+
+.btn-question:hover::before,
+.btn-question:hover::after {
+  border-color: #ff8b37;
+}
+.btn-question:active::before,
+.btn-question:active::after {
+  background-color: #fff3eb;
+}
+
+.btn-question::before {
+  left: -24px;
+  border-right: none;
+  border-top: none;
+}
+
+.btn-question::after {
+  right: -24px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.quiz-stage {
+  /* width: 27%; */
+  flex-basis: 27%;
+  height: 100vh;
+  background-color: #fff;
+}
