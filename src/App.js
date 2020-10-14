@@ -1,11 +1,10 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
 
-import Finish from "./pages/Finish/Finish";
-import Game from "./pages/Game/Game";
-import Start from "./pages/Start/Start";
+import Finish from './pages/Finish';
+import Game from './pages/Game';
+import Start from './pages/Start';
 
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 function App() {
   return (

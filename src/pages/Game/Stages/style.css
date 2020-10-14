@@ -33,7 +33,7 @@
 .stage::before,
 .stage::after {
   z-index: -1;
-  content: "";
+  content: '';
   background-color: #ffffff;
   width: 24px;
   height: 24px;
@@ -66,9 +66,9 @@
 @media (max-width: 650px) {
   .quiz-stage {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
     padding: 20px;
     z-index: 293;
     width: 100%;

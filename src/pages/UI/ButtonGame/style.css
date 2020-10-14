@@ -22,6 +22,12 @@
   background-color: #e87928;
 }
 
+@media (max-width: 650px) {
+  .btn-game {
+    width: 70%;
+    height: 48px;
+  }
+}
 @media (max-width: 450px) {
   .btn-game {
     width: 288px;

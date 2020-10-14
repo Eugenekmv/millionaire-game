@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
-import "./Game.css";
-import gameJson from "../../static/game.json";
-import AnswerList from "./AnswerList/AnswerList";
-import Stages from "./Stages/Stages";
-import BurgerButton from "../UI/BurgerButton/BurgerButton";
-import NavState from "../../context/navContext";
+import gameJson from '../../static/game.json';
+
+import NavState from '../../context/navContext';
+import AnswerList from './AnswerList';
+import BurgerButton from '../UI/BurgerButton';
+import Stages from './Stages';
+
+import './style.css';
 
 const Question = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -14,21 +16,23 @@ const Question = () => {
 
   const history = useHistory();
 
-  const quiz = gameJson.quiz;
-  const stages = gameJson.stages;
+  const { quiz } = gameJson;
+  const { stages } = gameJson;
   const { answers } = gameJson.quiz[activeQuestion];
   const question = gameJson.quiz[activeQuestion];
 
   const onAnswerClick = (answerId) => {
-    console.log(answerId);
-
     if (answerId === question.rightAnswerId) {
-      setAnsweredQuestion({ [answerId]: "success" });
+      setAnsweredQuestion({ [answerId]: 'success' });
+
+      const isGameFinished = () => {
+        return activeQuestion + 1 === quiz.length;
+      };
 
       const timeout = setTimeout(() => {
         if (isGameFinished()) {
           history.push({
-            pathname: "/finish",
+            pathname: '/finish',
             state: {
               prizeStep: activeQuestion,
             },
@@ -43,10 +47,10 @@ const Question = () => {
         clearTimeout(timeout);
       }, 1000);
     } else {
-      setAnsweredQuestion({ [answerId]: "failed" });
+      setAnsweredQuestion({ [answerId]: 'failed' });
       const timeout = setTimeout(() => {
         history.push({
-          pathname: "/finish",
+          pathname: '/finish',
           state: {
             prizeStep: activeQuestion - 1,
           },
@@ -54,10 +58,6 @@ const Question = () => {
         clearTimeout(timeout);
       }, 1000);
     }
-
-    const isGameFinished = () => {
-      return activeQuestion + 1 === quiz.length;
-    };
   };
 
   return (
@@ -75,7 +75,7 @@ const Question = () => {
             </div>
           </div>
         </div>
-        <BurgerButton></BurgerButton>
+        <BurgerButton />
         <Stages stages={stages} activeQuestion={activeQuestion} />
       </div>
     </NavState>

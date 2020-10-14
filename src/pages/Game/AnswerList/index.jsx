@@ -1,18 +1,18 @@
-import React from "react";
-import ButtonAnswer from "../../UI/ButtonAnswer/ButtonAnswer";
+import React from 'react';
+
+import ButtonAnswer from '../../UI/ButtonAnswer';
 
 const AnswerList = ({ answers, onAnswerClick, answeredQuestion }) => {
   return (
     <>
       {answers.map((answer) => (
         <ButtonAnswer
+          disabled={disabled}
           key={answer.id}
           id={answer.id}
           text={answer.text}
           onAnswerClick={onAnswerClick}
-          answeredQuestion={
-            answeredQuestion ? answeredQuestion[answer.id] : null
-          }
+          answeredQuestion={answeredQuestion ? answeredQuestion[answer.id] : null}
         />
       ))}
     </>

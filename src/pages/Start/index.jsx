@@ -1,15 +1,16 @@
-import React from "react";
-import "./Start.css";
-import hand from "../../static/img/hand.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import { Link } from "react-router-dom";
-import ButtonGame from "../UI/ButtonGame/ButtonGame";
+import ButtonGame from '../UI/ButtonGame';
+
+import hand from '../../static/img/hand.png';
+import './style.css';
 
 const Start = () => {
   return (
     <div className="container">
       <div className="wrapper">
-        <img src={hand} className="hand" alt="" />
+        <img src={hand} className="hand" alt="hand" />
         <div className="block">
           <span className="title">Who wants to be a millionaire?</span>
           <Link to="/game">

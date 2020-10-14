@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
 
-import { MenuContext } from "../../../context/navContext";
+import { MenuContext } from '../../../context/navContext';
 
-import "./BurgerButton.css";
+import './style.css';
 
 const BurgerButton = () => {
   const { isMenuOpen, toggleMenuMode } = useContext(MenuContext);
@@ -12,10 +12,7 @@ const BurgerButton = () => {
   };
 
   return (
-    <div
-      class={`icon nav-icon-5 ${isMenuOpen ? "open" : ""}`}
-      onClick={clickHandler}
-    >
+    <div className={`icon nav-icon-5 ${isMenuOpen ? 'open' : ''}`} onClick={clickHandler}>
       <span></span>
       <span></span>
       <span></span>

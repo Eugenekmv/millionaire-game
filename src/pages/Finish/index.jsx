@@ -1,14 +1,14 @@
-import React, { useCallback, useState } from "react";
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-import hand from "../../static/img/hand.png";
-import "./Finish.css";
-import gameJson from "../../static/game.json";
+import gameJson from '../../static/game.json';
 
-import { Link, useLocation } from "react-router-dom";
-import { useEffect } from "react";
-import ButtonGame from "../UI/ButtonGame/ButtonGame";
+import ButtonGame from '../UI/ButtonGame';
 
-const Finish = ({ props }) => {
+import './style.css';
+import hand from '../../static/img/hand.png';
+
+const Finish = () => {
   const location = useLocation();
   const prizeStep = location.state && location.state.prizeStep;
 
@@ -20,9 +20,6 @@ const Finish = ({ props }) => {
         setPrize(step.amount);
       }
     });
-
-    console.log("prizeste:", prizeStep);
-    console.log("prize", prize);
   }, [prizeStep]);
 
   return (
