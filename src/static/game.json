@@ -12,25 +12,25 @@
             ]
         },
         {
-            "question": "Hows the weather?",
+            "question": "What is the capital of Chile??",
             "id": 2,
             "rightAnswerId": 4,
             "answers": [
-                {"text": 10, "id": 1},
-                {"text": 13, "id": 2},
-                {"text": 15, "id": 3},
-                {"text": 12, "id": 4}
+                {"text": "Zhytomyr ", "id": 1},
+                {"text": "Oslo", "id": 2},
+                {"text": "Cusco", "id": 3},
+                {"text": "Santiago ", "id": 4}
             ]
         },
         {
-            "question": "Hows the weather?",
+            "question": "What is Japanese sake made from?",
             "id": 3,
-            "rightAnswerId": 4,
+            "rightAnswerId": 1,
             "answers": [
-                {"text": 10, "id": 1},
-                {"text": 13, "id": 2},
-                {"text": 15, "id": 3},
-                {"text": 12, "id": 4}
+                {"text": "Rice", "id": 1},
+                {"text": "Bread", "id": 2},
+                {"text": "Corn", "id": 3},
+                {"text": "Fish", "id": 4}
             ]
         },
         {
@@ -45,91 +45,91 @@
             ]
         },
         {
-            "question": "Hows the weather?",
+            "question": "Which country is the origin of the cocktail Mojito?",
             "id": 5,
-            "rightAnswerId": 4,
+            "rightAnswerId": 2,
             "answers": [
-                {"text": 10, "id": 1},
-                {"text": 13, "id": 2},
-                {"text": 15, "id": 3},
-                {"text": 12, "id": 4}
+                {"text": "Mexico", "id": 1},
+                {"text": "Cuba", "id": 2},
+                {"text": "Peru", "id": 3},
+                {"text": "Chile", "id": 4}
             ]
         },
         {
-            "question": "Hows the weather?",
+            "question": "What is the capital of Westeros in Game of Thrones??",
             "id": 6,
             "rightAnswerId": 4,
             "answers": [
-                {"text": 10, "id": 1},
-                {"text": 13, "id": 2},
-                {"text": 15, "id": 3},
-                {"text": 12, "id": 4}
+                {"text": "Volantis", "id": 1},
+                {"text": "Pentos", "id": 2},
+                {"text": "Braavos", "id": 3},
+                {"text": "King’s Landing", "id": 4}
             ]
         },
         {
-            "question": "Hows the weather?",
+            "question": "What language is spoken in Brazil?",
             "id": 7,
             "rightAnswerId": 4,
             "answers": [
-                {"text": 10, "id": 1},
-                {"text": 13, "id": 2},
-                {"text": 15, "id": 3},
-                {"text": 12, "id": 4}
+                {"text": "English", "id": 1},
+                {"text": "Chineese", "id": 2},
+                {"text": "Brazilian", "id": 3},
+                {"text": "Portuguese", "id": 4}
             ]
         },
         {
-            "question": "Hows the weather?",
+            "question": "How many notes are there in a musical scale?",
             "id": 8,
             "rightAnswerId": 4,
             "answers": [
-                {"text": 10, "id": 1},
-                {"text": 13, "id": 2},
-                {"text": 15, "id": 3},
-                {"text": 12, "id": 4}
+                {"text": "10", "id": 1},
+                {"text": "13", "id": 2},
+                {"text": "9", "id": 3},
+                {"text": "7", "id": 4}
             ]
         },
         {
-            "question": "Hows the weather?",
+            "question": "What company is also the name of one of the longest rivers in the world?",
             "id": 9,
             "rightAnswerId": 4,
             "answers": [
-                {"text": 10, "id": 1},
-                {"text": 13, "id": 2},
-                {"text": 15, "id": 3},
-                {"text": 12, "id": 4}
+                {"text": "Google", "id": 1},
+                {"text": "Dnipro", "id": 2},
+                {"text": "Desna", "id": 3},
+                {"text": "Amazon", "id": 4}
             ]
         },
         {
-            "question": "Hows the weather?",
+            "question": "What colour are most buses in London?",
             "id": 10,
-            "rightAnswerId": 4,
+            "rightAnswerId": 3,
             "answers": [
-                {"text": 10, "id": 1},
-                {"text": 13, "id": 2},
-                {"text": 15, "id": 3},
-                {"text": 12, "id": 4}
+                {"text": "Yellow", "id": 1},
+                {"text": "Blue", "id": 2},
+                {"text": "Red", "id": 3},
+                {"text": "Black", "id": 4}
             ]
         },
         {
-            "question": "Hows the weather?",
+            "question": "How many keys are there on a piano?",
             "id": 11,
             "rightAnswerId": 4,
             "answers": [
-                {"text": 10, "id": 1},
-                {"text": 13, "id": 2},
-                {"text": 15, "id": 3},
-                {"text": 12, "id": 4}
+                {"text": "101", "id": 1},
+                {"text": "91", "id": 2},
+                {"text": "97", "id": 3},
+                {"text": "88", "id": 4}
             ]
         },
         {
-            "question": "Hows the weather?",
+            "question": "Gordon Sumner is the real name of what famous British musician?",
             "id": 12,
-            "rightAnswerId": 4,
+            "rightAnswerId": 1,
             "answers": [
-                {"text": 10, "id": 1},
-                {"text": 13, "id": 2},
-                {"text": 15, "id": 3},
-                {"text": 12, "id": 4}
+                {"text": "Sting", "id": 1},
+                {"text": "Spring", "id": 2},
+                {"text": "Stick", "id": 3},
+                {"text": "Eminem", "id": 4}
             ]
         }
     ],
