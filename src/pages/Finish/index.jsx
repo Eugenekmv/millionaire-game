@@ -31,7 +31,7 @@ const Finish = () => {
             <span className="results__title">Total score:</span>
             <span className="results__earned">{`${prize} earned`}</span>
           </div>
-          <Link to="/game">
+          <Link to="/millionaire-game/game">
             <ButtonGame title="Try again" />
           </Link>
         </div>

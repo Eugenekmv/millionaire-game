@@ -13,7 +13,7 @@ const Start = () => {
         <img src={hand} className="hand" alt="hand" />
         <div className="block">
           <span className="title">Who wants to be a millionaire?</span>
-          <Link to="/game">
+          <Link to="/millionaire-game/game">
             <ButtonGame title="Start" />
           </Link>
         </div>
