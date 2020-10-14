@@ -1,0 +1,132 @@
+.btn-answer {
+  z-index: 1;
+  position: relative;
+  width: 35%;
+  height: 72px;
+  margin-bottom: 32px;
+  color: black;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 48px;
+  font-size: 20px;
+  outline: none;
+  border: 2px solid #d0d0d8;
+  border-radius: 6px;
+  transition: border-color ease 0.2s;
+  cursor: pointer;
+}
+
+.btn-answer:hover {
+  border-color: #ff8b37;
+}
+.btn-answer:active {
+  background-color: #fff3eb;
+}
+
+.btn-answer.success {
+  background-color: #e6faea;
+  border-color: #47d867;
+}
+
+.btn-answer.failed {
+  background-color: #fdeeed;
+  border-color: #ec6259;
+}
+
+.btn-answer::before,
+.btn-answer::after {
+  z-index: -1;
+  content: "";
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 8px;
+  transform: rotate(45deg);
+  border: 2px solid #d0d0d8;
+  border-radius: 5px;
+  transition: border-color ease 0.2s;
+}
+
+.btn-answer:hover::before,
+.btn-answer:hover::after {
+  border-color: #ff8b37;
+}
+
+.btn-answer:active::before,
+.btn-answer:active::after {
+  background-color: #fff3eb;
+}
+
+.btn-answer::before {
+  left: -24px;
+  border-right: none;
+  border-top: none;
+}
+
+.btn-answer::after {
+  right: -24px;
+  border-left: none;
+  border-bottom: none;
+}
+.btn-answer.success::before,
+.btn-answer.success::after {
+  background-color: #e6faea;
+  border-color: #47d867;
+}
+
+.btn-answer.failed::before,
+.btn-answer.failed::after {
+  border-color: #ec6259;
+  background-color: #fdeeed;
+}
+
+.id {
+  color: #ff8b37;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .btn-answer {
+    width: 42%;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  .btn-answer::before,
+  .btn-answer::after {
+    width: 36px;
+    height: 36px;
+    top: 5px;
+  }
+  .btn-answer::before {
+    left: -16px;
+  }
+
+  .btn-answer::after {
+    right: -16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .btn-answer {
+    width: 70%;
+    height: 50px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  .btn-answer::before,
+  .btn-answer::after {
+    width: 34px;
+    height: 34px;
+    top: 5px;
+  }
+  .btn-answer::before {
+    left: -16px;
+  }
+
+  .btn-answer::after {
+    right: -16px;
+  }
+}

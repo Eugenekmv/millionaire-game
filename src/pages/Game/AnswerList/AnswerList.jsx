@@ -1,17 +1,18 @@
 import React from "react";
-import Button from "../../UI/Button/Button";
+import ButtonAnswer from "../../UI/ButtonAnswer/ButtonAnswer";
 
 const AnswerList = ({ answers, onAnswerClick, answeredQuestion }) => {
-  console.log(answers);
   return (
     <>
       {answers.map((answer) => (
-        <Button
+        <ButtonAnswer
           key={answer.id}
           id={answer.id}
           text={answer.text}
           onAnswerClick={onAnswerClick}
-          answeredQuestion={answeredQuestion}
+          answeredQuestion={
+            answeredQuestion ? answeredQuestion[answer.id] : null
+          }
         />
       ))}
     </>

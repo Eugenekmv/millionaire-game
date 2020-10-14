@@ -20,6 +20,7 @@
 
 .wrapper {
   position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,33 +41,10 @@
   font-weight: 600;
 }
 
-.btn-start {
-  background-color: #ff8b37;
-  font-size: 20px;
-  font-weight: 600;
-  font-style: 20px;
-  color: #fff;
-  width: 296px;
-  height: 64px;
-  border-radius: 12px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-
-  transition: background-color ease 0.3s;
-}
-
-.btn-start:hover {
-  background-color: #ffac70;
-}
-
-.btn-start:active {
-  background-color: #e87928;
-}
-
 @media (max-width: 450px) {
   .wrapper {
     flex-direction: column;
+    width: 320px;
   }
 
   .hand {
@@ -76,15 +54,12 @@
   }
   .block {
     height: 230px;
+    width: 320px;
     align-items: center;
   }
   .title {
     font-size: 32px;
     width: 260px;
     text-align: center;
-  }
-  .btn-start {
-    width: 288px;
-    height: 48px;
   }
 }

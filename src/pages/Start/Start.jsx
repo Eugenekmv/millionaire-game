@@ -2,6 +2,9 @@ import React from "react";
 import "./Start.css";
 import hand from "../../static/img/hand.png";
 
+import { Link } from "react-router-dom";
+import ButtonGame from "../UI/ButtonGame/ButtonGame";
+
 const Start = () => {
   return (
     <div className="container">
@@ -9,7 +12,9 @@ const Start = () => {
         <img src={hand} className="hand" alt="" />
         <div className="block">
           <span className="title">Who wants to be a millionaire?</span>
-          <button className="btn-start">Start</button>
+          <Link to="/game">
+            <ButtonGame title="Start" />
+          </Link>
         </div>
       </div>
     </div>
