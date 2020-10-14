@@ -7,7 +7,6 @@ const AnswerList = ({ answers, onAnswerClick, answeredQuestion }) => {
     <>
       {answers.map((answer) => (
         <ButtonAnswer
-          disabled={disabled}
           key={answer.id}
           id={answer.id}
           text={answer.text}

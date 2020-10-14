@@ -32,7 +32,7 @@ const Question = () => {
       const timeout = setTimeout(() => {
         if (isGameFinished()) {
           history.push({
-            pathname: '/finish',
+            pathname: '/millionaire-game/finish',
             state: {
               prizeStep: activeQuestion,
             },
@@ -50,7 +50,7 @@ const Question = () => {
       setAnsweredQuestion({ [answerId]: 'failed' });
       const timeout = setTimeout(() => {
         history.push({
-          pathname: '/finish',
+          pathname: '/millionaire-game/finish',
           state: {
             prizeStep: activeQuestion - 1,
           },
