@@ -10,9 +10,16 @@ import Stages from './Stages'
 
 import './style.css'
 
-const Question = () => {
-    const [activeQuestion, setActiveQuestion] = useState(0)
-    const [answeredQuestion, setAnsweredQuestion] = useState(null)
+export type Answered = {
+    [answered: string]: string | number
+}
+export type AnsweredState = Answered | null
+
+export type Active = number
+
+const Question: React.FC = () => {
+    const [activeQuestion, setActiveQuestion] = useState<Active>(0)
+    const [answeredQuestion, setAnsweredQuestion] = useState<AnsweredState>(null)
 
     const history = useHistory()
 
@@ -21,11 +28,14 @@ const Question = () => {
     const { answers } = gameJson.quiz[activeQuestion]
     const question = gameJson.quiz[activeQuestion]
 
-    const onAnswerClick = (answerId) => {
+    console.log(stages)
+
+    const onAnswerClick = (answerId: number) => {
         if (answeredQuestion) {
             return
         }
         if (answerId === question.rightAnswerId) {
+            //true???
             setAnsweredQuestion({ [answerId]: 'success' })
 
             const isGameFinished = () => {
